@@ -3,6 +3,7 @@
 from .models import PsychiatristRecord
 from .sources import WHOSource
 from .aggregations import Aggregation, RegionAverages, AccessLevelCounts, YearsCovered
+from .report import build_summary, write_summary
 
 __all__ = [
     "PsychiatristRecord",
@@ -11,4 +12,6 @@ __all__ = [
     "RegionAverages",
     "AccessLevelCounts",
     "YearsCovered",
+    "build_summary",
+    "write_summary",
 ]
